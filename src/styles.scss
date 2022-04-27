@@ -19,9 +19,24 @@ body {
     #feed {
         padding: 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         justify-content: center;
         gap: 1rem;
+    }
+    @media screen and (max-width: 500px) {
+        #feed {
+            padding: 2rem;
+        }
+        .news_container {
+            font-size: 1rem;
+            text-align: center;
+        }
+        p {
+            margin-top: 2rem;
+            a {
+                font-size: 0.8rem!important;
+            }
+        }
     }
     .news_container {
         display: flex;

@@ -24,12 +24,28 @@ body #feed {
   padding: 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  body #feed {
+    padding: 2rem;
+  }
+  body .news_container {
+    font-size: 1rem;
+    text-align: center;
+  }
+  body p {
+    margin-top: 2rem;
+  }
+  body p a {
+    font-size: 0.8rem !important;
+  }
 }
 
 body .news_container {
