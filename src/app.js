@@ -1,6 +1,6 @@
 const feedDisplay = document.querySelector('#feed');
 
-fetch('http://localhost:3000/results')
+fetch('https://current-news-api-display.herokuapp.com/results')
     .then((response) => response.json())
     .then((data) => {
         data.forEach((article) => {
